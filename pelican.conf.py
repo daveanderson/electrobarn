@@ -14,7 +14,7 @@ GITHUB_URL = 'http://github.com/electrobarn/'
 FEED_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
-THEME = 'bootstrap'
+THEME = 'electrobarn'
 
 # Blogroll
 LINKS =  (
