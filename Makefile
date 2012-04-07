@@ -3,7 +3,7 @@ PELICAN=pelican
 PELICANOPTS=None
 
 BASEDIR=$(PWD)
-INPUTDIR=$(BASEDIR)/src
+INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelican.conf.py
 
@@ -13,7 +13,7 @@ FTP_TARGET_DIR=/
 
 SSH_HOST=electrobarn.com
 SSH_USER=electro
-SSH_TARGET_DIR=/var/www
+SSH_TARGET_DIR=/home/electro/webapps/electrobarn_static
 
 DROPBOX_DIR=~/Dropbox/Public/
 

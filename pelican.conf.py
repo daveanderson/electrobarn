@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u"Dave Anderson"
+AUTHOR = u"ElectroBarn Inc"
 SITENAME = u"electrobarn.com"
 SITEURL = 'http://electrobarn.com/'
 
@@ -14,7 +14,7 @@ GITHUB_URL = 'http://github.com/electrobarn/'
 FEED_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
-THEME = 'electrobarn'
+THEME = u'themes/electrobarn'
 
 # Blogroll
 LINKS =  (
