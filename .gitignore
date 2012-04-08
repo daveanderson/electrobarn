@@ -1,3 +1,4 @@
 build
 pelican_env
 output
+.DS_store
