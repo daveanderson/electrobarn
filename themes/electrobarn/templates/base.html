@@ -46,12 +46,14 @@
 	<div class="container-fluid">	
 	  <div class="sidebar">
 		<div class="well">
-			<h3>Blogroll</h3>
+			{#<h3>Blogroll</h3>
 			<ul>
 				{% for name, link in LINKS %}
 				<li><a href="{{ link }}">{{ name }}</a></li>
 				{% endfor %}
-			</ul>
+			</ul>#}
+			<h3>About</h3>
+			<p>ElectroBarn is the face of Dave Anderson, whose experience with Macs dates back to the era of ridicule.<br /><br />Dave cut his teeth on an Apple ][+ and has never strayed far from these roots.<br /><br />His professional career started in the world of printed circuit boards and oscilloscopes and then transitioned through Mac OS X drivers (for the same PCBs) to Mac and iOS Apps.</p>
 			<div class="social">
 			<h3>Social</h3>
 			<ul>
@@ -63,11 +65,11 @@
 		</div>
 	  </div>
 	  <div class="content">
-			{% block indextitle %}<div class="page-header"><h1>{% block title %} {{ self.windowtitle() }} {% endblock %}</h1></div>{% endblock %} {# this needs to disappear? #}
+			{% block indextitle %}<div class="page-header"><h1>{% block title %} {{ self.windowtitle() }} {% endblock %}</h1></div>{% endblock %}
 			{% block content %}{% endblock %}
 		<footer>
 		  <p> Powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>, theme based on <a href="http://twitter.github.com/bootstrap/">Bootstrap, from Twitter</a>.</p>
-		  <p>&copy; {{ AUTHOR }} 2011</p>
+		  <p>&copy; {{ AUTHOR }}. 2012</p>
 		</footer>
 	  </div>
    
