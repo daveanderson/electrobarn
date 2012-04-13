@@ -1,10 +1,12 @@
-Date: 2012-04-07
+Date: 2012-04-07 20:30
 Title: Lesson 99 Part 1: Objective-C and Cocoa Conventions
 Slug: lesson-99-part-1-objective-c-and-cocoa-conventions
 Tags: code, objc, obj-c, objective-c, style, conventions, cocoa
 Category: code
 
-Last month I was asked to present at [iPhone Dev Camp #6](http://calgary.iphonedevcamps.org/iphone-dev-camp-6).  I gave the organizer a few topics that I'd had some recent experience with that I thought would be relevant and three were selected.  When I checked the Dev Camp website, however, I could see that I was listed as presenting "Lesson 99".  So I decided to run with Lesson 99 as a theme.  This is my compilation of notes and opinions as influenced by search results indicating that Lesson 99 was [Beekeeper Or Bee-haver ](http://basicbeekeeping.blogspot.ca/2011/03/lesson-99-beekeeper-or-bee-haver.html).  This is part 1.  See [Part 2](/lesson-99-part-2-intro-to-blocks.html) and [Part 3](/lesson-99-part-3-grand-central-dispatch.html) for the other topics.
+Last month I was asked to present at [iPhone Dev Camp #6](http://calgary.iphonedevcamps.org/iphone-dev-camp-6).  I gave the organizer a few topics that I'd had some recent experience with that I thought would be relevant and three were selected.  When I checked the Dev Camp website, however, I could see that I was listed as presenting "Lesson 99".  So I decided to run with Lesson 99 as a theme.  This is my compilation of notes and opinions as influenced by search results indicating that Lesson 99 was [Beekeeper Or Bee-haver ](http://basicbeekeeping.blogspot.ca/2011/03/lesson-99-beekeeper-or-bee-haver.html).
+
+See also [Part 2](http://electrobarn.com/lesson-99-part-2-intro-to-blocks.html) and [Part 3](http://electrobarn.com/lesson-99-part-3-grand-central-dispatch.html) for the other topics.
 
 ### Lesson 99 – Beekeeper or Bee-haver
 A BEE-HAVER is someone who can say they “HAVE” bees but they do not want beekeeping to consume their time or interest, so they spend little to no time keeping bees, they simply have bees. That’s certainly one approach.

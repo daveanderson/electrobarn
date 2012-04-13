@@ -1,10 +1,10 @@
-Date: 2012-04-08
+Date: 2012-04-07 21:00
 Title: Lesson 99 Part 3: Intro to Grand Central Dispatch (GCD)
 Slug: lesson-99-part-3-grand-central-dispatch
-Tags: code, objc, obj-c, objective-c, style, conventions, cocoa, gcd
+Tags: code, objc, obj-c, objective-c, cocoa, gcd
 Category: code
 
-See also: [Part 1](/lesson-99-part-1-objective-c-and-cocoa-conventions.html) and [Part 2](/lesson-99-part-2-intro-to-blocks.html)
+See also: [Part 1](http://electrobarn.com/lesson-99-part-1-objective-c-and-cocoa-conventions.html) and [Part 2](http://electrobarn.com/lesson-99-part-2-intro-to-blocks.html)
 
 ## Grand Central Dispatch
 
@@ -128,7 +128,7 @@ Use `dispatch_async()` to fire off an operation to complete in the background.
 	}
 
 
-6. Asynchronous operations
+####Asynchronous operations
 
 Use nested `dispatch_async()` to fire off an operation and provide a block that will get called back on the main queue (main thread) to update the interface, for example.
 

@@ -1,10 +1,10 @@
-Date: 2012-04-08
+Date: 2012-04-07  20:45
 Title: Lesson 99 Part 2: Intro to Blocks
 Slug: lesson-99-part-2-intro-to-blocks
-Tags: code, objc, obj-c, objective-c, style, conventions, cocoa, blocks
+Tags: code, objc, obj-c, objective-c, cocoa, blocks
 Category: code
 
-See also: [Part 1](/lesson-99-part-1-objective-c-and-cocoa-conventions.html) and [Part 3](/lesson-99-part-3-grand-central-dispatch.html)
+See also: [Part 1](http://electrobarn.com/lesson-99-part-1-objective-c-and-cocoa-conventions.html) and [Part 3](http://electrobarn.com/lesson-99-part-3-grand-central-dispatch.html)
 
 ## Blocks
 What is a block?
@@ -63,7 +63,7 @@ Blocks allow you to write code at the point of invocation that is executed later
 Blocks allow access to local variables.  Rather than using callbacks requiring a data structure that embodies all the contextual information you need to perform an operation, you simply access local variables directly.
 
 
-####Block basics
+####Block Basics
 
 Blocks can have parameters and a return type (just like functions)
 But they can also have access to local variables (better than functions)
@@ -79,7 +79,7 @@ But they can also have access to local variables (better than functions)
 	printf("%d", myBlock(3));
 
 
-####Favourite block API - UIView animateWithBlock:
+####Favourite Block API - UIView animateWithBlock:
 
 	:::objc
 	[UIView animateWithDuration:0.5f
@@ -93,7 +93,7 @@ But they can also have access to local variables (better than functions)
 	 ];	
 
 
-####Getting data out of a block
+####Getting Data out of a Block
 
 Using FMDB as a front end to an sqlite database.  The latest version of FMDB uses a queue to manage access to a database and lets you provide a block to specify the block you need to happen.
    
@@ -112,9 +112,9 @@ Using FMDB as a front end to an sqlite database.  The latest version of FMDB use
 
 I want to query the database to get find out how many items are in my database.  FMDB lets me provide a block for what I want to happen with the database (`db`) whose access is managed by the queue (`self.queue`).  My `count` variable is in scope for the block to read, however I want to modify the value of `count` and return it outside the block.  In order for changes to `count` to be available, I have to mark it with the `__block` storage type modifier.
 
-4. Avoid retain issues
+####Avoid Retain Issues
  
-I love to use property within a class so that I know that I'm using accessors and not touching the ivar directly, so my code is littered with `self.thisProperty` and `self.thatProperty`.  However, in order for `self.thisProperty` accessor to be triggered from within the block, `self` would have to be retained by the block, causing an unbalanced retain which will turn into a memory leak!  Solution? Use a local variable.
+I prefer to use property within a class so that I know that I'm using accessors and not touching the ivar directly, so my code is littered with `self.thisProperty` and `self.thatProperty`.  However, in order for `self.thisProperty` accessor to be triggered from within the block, `self` would have to be retained by the block, causing an unbalanced retain which will turn into a memory leak!  Solution? Use a local variable.
 
     :::objc
 	- (NSArray *)locationsForCityOrderByName:(NSString *)city {
@@ -147,16 +147,16 @@ I love to use property within a class so that I know that I'm using accessors an
 
 ####Summary
 
-   A block is an anonymous inline collection of code that:
+A block is an anonymous inline collection of code that:
 
-	  * Has a typed argument list just like a function
-	  * Has an inferred or declared return type
-	  * Can capture state from the lexical scope within which it is defined
-	  * Can optionally modify the state of the lexical scope (via `__block`)
-	  * Can share the potential for modification with other blocks defined within the same lexical scope
-	  * Can continue to share and modify state defined within the lexical scope (the stack frame) after the lexical scope (the stack frame) has been destroyed
+* Has a typed argument list just like a function
+* Has an inferred or declared return type
+* Can capture state from the lexical scope within which it is defined
+* Can optionally modify the state of the lexical scope (via `__block`)
+* Can share the potential for modification with other blocks defined within the same lexical scope
+* Can continue to share and modify state defined within the lexical scope (the stack frame) after the lexical scope (the stack frame) has been destroyed
 
-   Because blocks are portable and anonymous objects encapsulating a unit of work that can (often) be performed asynchronously, they are a central feature of Grand Central Dispatch
+Because blocks are portable and anonymous objects encapsulating a unit of work that can (often) be performed asynchronously, they are a central feature of [Grand Central Dispatch](http://electrobarn.com/lesson-99-part-3-grand-central-dispatch.html).
 
 ###References:
 
